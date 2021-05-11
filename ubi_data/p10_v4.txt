@@ -1,0 +1,207 @@
+XLink initialized.
+Sending internal device firmware
+Successfully connected to device.
+Usb speed : Super/5000Mbps
+Mx serial id : 14442C102189BED200
+Loading config file
+Attempting to open stream config_d2h
+watchdog started 
+Successfully opened stream config_d2h with ID #0!
+Closing stream config_d2h: ...
+Closing stream config_d2h: DONE.
+EEPROM data: valid (v5)
+  Board name     : BW1098OBC
+  Board rev      : R0M0E0
+  HFOV L/R       : 71.86 deg
+  HFOV RGB       : 68.7938 deg
+  L-R   distance : 7.5 cm
+  L-RGB distance : 3.75 cm
+  L/R swapped    : yes
+  L/R crop region: center
+  Rectification Rotation R1 (left):
+    0.999820,    0.018723,   -0.003052,
+   -0.018714,    0.999821,    0.002950,
+    0.003106,   -0.002893,    0.999991,
+  Rectification Rotation R2 (right):
+    0.999605,    0.026582,   -0.009171,
+   -0.026609,    0.999642,   -0.002800,
+    0.009094,    0.003043,    0.999954,
+  Calibration intrinsic matrix M1 (left):
+  857.770386,    0.000000,  645.773254,
+    0.000000,  858.215454,  421.635590,
+    0.000000,    0.000000,    1.000000,
+  Calibration intrinsic matrix M2 (right):
+  857.596191,    0.000000,  643.920715,
+    0.000000,  858.098389,  399.615265,
+    0.000000,    0.000000,    1.000000,
+  Calibration rotation matrix R:
+    0.999951,   -0.007915,    0.005964,
+    0.007880,    0.999951,    0.005911,
+   -0.006011,   -0.005863,    0.999965,
+  Calibration translation matrix T:
+   -7.452841,
+   -0.198192,
+    0.068379,
+  Calibration Distortion Coeff d1 (Left):
+   -5.085970,   17.003525,   -0.001964,    0.000606,  -17.845343,   -5.138970,   17.204153,
+  -18.035015,    0.000000,    0.000000,    0.000000,    0.000000,    0.000000,    0.000000,
+  Calibration Distortion Coeff d2 (Right):
+   -5.601520,   19.315069,    0.002923,    0.000211,  -19.551390,   -5.649607,   19.486395,
+  -19.711487,    0.000000,    0.000000,    0.000000,    0.000000,    0.000000,    0.000000,
+/home/pi/Documents/ubicomp/depthai/resources/nn/face-detection-retail-0004/face-detection-retail-0004.json
+depthai: Using calibration from stored in EEPROM
+config_h2d json:
+{"_board":{"calib_data":[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"mesh_left":[0.0],"mesh_right":[0.0]},"_load_inBlob":true,"_pipeline":{"_streams":[{"name":"metaout"},{"name":"previewout"}]},"ai":{"NCEs":1,"NN_config":{"NN_family":"mobilenet","confidence_threshold":0.5,"output_format":"detection"},"blob0_size":1332032,"blob1_size":4994496,"calc_dist_to_bb":true,"camera_input":"rgb","cmx_slices":14,"keep_aspect_ratio":true,"num_stages":2,"shaves":14},"app":{"enable_reconfig":true,"sync_sequence_numbers":false,"sync_video_meta_streams":false,"usb_chunk_KiB":64},"board":{"clear-eeprom":false,"left_fov_deg":71.86000061035156,"left_to_rgb_distance_m":0.03750000149011612,"left_to_right_distance_m":0.07500000298023224,"name":"","override-eeprom":false,"revision":"","rgb_fov_deg":68.7938003540039,"stereo_center_crop":false,"store-to-eeprom":false,"swap-left-and-right-cameras":true},"camera":{"mono":{"fps":30.0,"resolution_h":400,"resolution_w":640},"rgb":{"fps":30.0,"resolution_h":1080,"resolution_w":1920}},"depth":{"depth_limit_mm":10000,"lr_check":false,"median_kernel_size":7,"padding_factor":0.30000001192092896,"warp_rectify":{"edge_fill_color":0,"mirror_frame":true,"use_mesh":false}},"ot":{"confidence_threshold":0.5,"max_tracklets":20}}
+size of input string json_config_obj to config_h2d is ->Attempting to open stream config_h2d
+Successfully opened stream config_h2d with ID #1!
+Writing 1048576 bytes to config_h2d
+!!! XLink write successful: config_h2d (1048576)
+Closing stream config_h2d: ...
+Closing stream config_h2d: DONE.
+Creating observer stream host_capture: ...
+Attempting to open stream host_capture
+Successfully opened stream host_capture with ID #0!
+Creating observer stream host_capture: DONE.
+Attempting to open stream inBlob
+Successfully opened stream inBlob with ID #1!
+Writing 1332032 bytes to inBlob
+!!! XLink write successful: inBlob (1332032)
+Closing stream inBlob: ...
+Closing stream inBlob: DONE.
+depthai: done sending Blob file /home/pi/Documents/ubicomp/depthai/resources/nn/face-detection-retail-0004/face-detection-retail-0004.blob.sh14cmx14NCE1
+Attempting to open stream outBlob
+Successfully opened stream outBlob with ID #2!
+Closing stream outBlob: ...
+Closing stream outBlob: DONE.
+CNN to depth bounding-box mapping: start(159, 39), max_size(321, 321)
+Attempting to open stream inBlob
+Successfully opened stream inBlob with ID #1!
+Writing 4994496 bytes to inBlob
+!!! XLink write successful: inBlob (4994496)
+Closing stream inBlob: ...
+Closing stream inBlob: DONE.
+depthai: done sending Blob file /home/pi/Documents/ubicomp/depthai/resources/nn/emotions-recognition-retail-0003/emotions-recognition-retail-0003.blob.sh14cmx14NCE1
+Attempting to open stream outBlob
+Successfully opened stream outBlob with ID #2!
+Closing stream outBlob: ...
+Closing stream outBlob: DONE.
+No calibration file. Using Calibration Defaults.
+Using depthai module from:  /home/pi/Documents/Interactive-Lab-Hub/testenv/lib/python3.7/site-packages/depthai.cpython-37m-arm-linux-gnueabihf.so
+Depthai version installed:  1.0.0.0
+Using CNN2: emotions-recognition-retail-0003
+[92mCompiled mode found: compiled for 14 shaves, 14 cmx_slices and 1 NN_engines [0m
+[92mCompiled mode found: compiled for 14 shaves, 14 cmx_slices and 1 NN_engines [0m
+['metaout', 'previewout']
+Available streams: ['meta_d2h', 'left', 'right', 'disparity', 'depth', 'metaout', 'previewout', 'jpegout', 'video', 'object_tracker', 'rectified_left', 'rectified_right', 'color']
+1619661365.3682642, 510, 506, sad, 0.703125
+1619661368.706045, 510, 506, sad, 0.7578125
+1619661389.6832232, 510, 506, sad, 0.71630859375
+1619661389.7498415, 510, 506, sad, 0.71484375
+1619661389.7829206, 510, 506, sad, 0.7158203125
+1619661389.8497062, 510, 506, sad, 0.72314453125
+1619661389.9165514, 510, 506, sad, 0.72265625
+1619661389.9499245, 510, 506, sad, 0.751953125
+1619661389.9834669, 510, 506, sad, 0.75830078125
+1619661390.0167508, 510, 506, sad, 0.73876953125
+1619661390.0500348, 510, 506, sad, 0.7001953125
+1619661390.1501184, 510, 506, sad, 0.70263671875
+1619661390.2167358, 510, 506, sad, 0.7080078125
+1619661390.450194, 510, 506, sad, 0.748046875
+1619661390.516469, 510, 506, sad, 0.77294921875
+1619661390.5835989, 510, 506, sad, 0.7060546875
+1619661390.6168668, 510, 506, sad, 0.78369140625
+1619661390.6501837, 510, 506, sad, 0.775390625
+1619661390.6837366, 510, 506, sad, 0.78369140625
+1619661390.71708, 510, 506, sad, 0.810546875
+1619661390.7506247, 510, 506, sad, 0.837890625
+1619661390.7839305, 510, 506, sad, 0.78955078125
+1619661390.817417, 510, 506, sad, 0.72265625
+1619661393.9521797, 510, 506, happy, 0.7158203125
+1619661393.9854803, 510, 506, happy, 0.72412109375
+1619661394.0187411, 510, 506, happy, 0.7744140625
+1619661394.0520344, 510, 506, happy, 0.81982421875
+1619661394.0854087, 510, 506, happy, 0.8505859375
+1619661394.1189506, 510, 506, happy, 0.79736328125
+1619661394.152268, 510, 506, happy, 0.88037109375
+1619661394.1858137, 510, 506, happy, 0.892578125
+1619661394.2190983, 510, 506, happy, 0.92431640625
+1619661394.252707, 510, 506, happy, 0.92822265625
+1619661394.2859855, 510, 506, happy, 0.9462890625
+1619661394.3192976, 510, 506, happy, 0.91845703125
+1619661394.3526523, 510, 506, happy, 0.90234375
+1619661394.3859637, 510, 506, happy, 0.90380859375
+1619661394.4192717, 510, 506, happy, 0.91650390625
+1619661394.452624, 510, 506, happy, 0.93603515625
+1619661394.4859903, 510, 506, happy, 0.94140625
+1619661394.5192645, 510, 506, happy, 0.9462890625
+1619661394.5526884, 510, 506, happy, 0.93701171875
+1619661394.5859396, 510, 506, happy, 0.94384765625
+1619661394.6192758, 510, 506, happy, 0.93603515625
+1619661394.652617, 510, 506, happy, 0.9326171875
+1619661394.6859596, 510, 506, happy, 0.94482421875
+1619661394.71926, 510, 506, happy, 0.9384765625
+1619661394.7526207, 510, 506, happy, 0.8828125
+1619661394.785991, 510, 506, happy, 0.85595703125
+1619661394.8192024, 510, 506, happy, 0.7314453125
+1619661395.2861693, 510, 506, happy, 0.70068359375
+1619661395.319475, 510, 506, happy, 0.71142578125
+1619661395.3528945, 510, 506, happy, 0.73779296875
+1619661395.386204, 510, 506, happy, 0.70849609375
+1619661395.4195473, 510, 506, happy, 0.70166015625
+1619661395.4528291, 510, 506, happy, 0.7490234375
+1619661450.8830323, 510, 506, sad, 0.70654296875
+1619661461.989257, 510, 506, sad, 0.70654296875
+1619661465.9912064, 510, 506, sad, 0.7490234375
+1619661467.8255663, 510, 506, sad, 0.70751953125
+1619661467.859289, 510, 506, sad, 0.72314453125
+1619661467.892466, 510, 506, sad, 0.7119140625
+1619661469.392911, 510, 506, sad, 0.7041015625
+1619661476.7968426, 510, 506, sad, 0.72900390625
+1619661476.8301346, 510, 506, sad, 0.705078125
+1619661481.3992107, 510, 506, sad, 0.734375
+1619661481.4325857, 510, 506, sad, 0.7314453125
+1619661485.4680789, 510, 506, sad, 0.70166015625
+1619661489.070087, 510, 506, sad, 0.74267578125
+1619661489.1036541, 510, 506, sad, 0.7109375
+Opening stream for read: metaout
+Attempting to open stream metaout
+Successfully opened stream metaout with ID #1!
+Starting thread for stream: metaout
+Started thread for stream: metaout
+Opening stream for read: previewout
+Attempting to open stream previewout
+Successfully opened stream previewout with ID #2!
+Starting thread for stream: previewout
+Started thread for stream: previewout
+=== New data in observer stream host_capture, size: 4
+Writing 4 bytes to host_capture
+!!! XLink write successful: host_capture (4)
+Stopping threads: ...
+[35mE: [global] [    507551] [python3] addEvent:264	Condition failed: event->header.flags.bitField.ack != 1[0m
+[35mE: [global] [    507551] [python3] addEventWithPerf:276	 addEvent(event) method call failed with an error: 3[0m
+[35mE: [global] [    507551] [python3] XLinkReadData:156	Condition failed: (addEventWithPerf(&event, &opTime))[0m
+Device get data failed: 7
+Closing stream metaout: ...
+[35mE: [global] [    507551] [Scheduler00Thr] dispatcherEventSend:53	Write failed (header) (err -4) | event XLINK_CLOSE_STREAM_REQ
+[0m
+[35mE: [xLink] [    507551] [Scheduler00Thr] sendEvents:1027	Event sending failed[0m
+[35mE: [global] [    507551] [python3] addEvent:264	Condition failed: event->header.flags.bitField.ack != 1[0m
+[35mE: [global] [    507551] [python3] XLinkCloseStream:115	Condition failed: (addEvent(&event))[0m
+Closing stream metaout: DONE.
+Thread for metaout finished.
+Closing stream previewout: ...
+[35mE: [global] [    507553] [Scheduler00Thr] dispatcherEventSend:53	Write failed (header) (err -4) | event XLINK_CLOSE_STREAM_REQ
+[0m
+[35mE: [xLink] [    507553] [Scheduler00Thr] sendEvents:1027	Event sending failed[0m
+Closing stream previewout: DONE.
+Thread for previewout finished.
+Stopping threads: DONE 0.812s.
+Closing all observer streams: ...
+Closing stream host_capture: ...
+Closing stream host_capture: DONE.
+Closing all observer streams: DONE.
+Reseting device: 0.
+[35mE: [global] [    507553] [Scheduler00Thr] dispatcherEventSend:53	Write failed (header) (err -4) | event XLINK_RESET_REQ
+[0m
+[35mE: [xLink] [    507553] [Scheduler00Thr] sendEvents:1027	Event sending failed[0m
+Reseting: DONE.
